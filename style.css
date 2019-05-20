@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5
 
 .bg-special 
 {
-    background-image: url(/imgs/bg-1.jpg);
+    background-image: url(imgs/bg-1.jpg);
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -200,7 +200,7 @@ nav .navbar-toggler:focus
 
 .four-section 
 {
-    background-image: url(/imgs/bg-2.jpg);
+    background-image: url(imgs/bg-2.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     color: white;
