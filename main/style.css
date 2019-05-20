@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:600|Source+Sans+Pro:400,700');
+
+
+/*** DEFAULT ***/
+
+
+* 
+{
+    font-family: Source Sans Pro;
+}
+
+.is-dimmed:after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+}
+
+h1, h2, h3, h4, h5 
+{
+    font-family: Overpass;
+}
+
+.h-100-min 
+{
+    min-height: 100vh;
+}
+
+.h-75-min 
+{
+    min-height: 75vh;
+}
+
+.form-control:focus 
+{
+    outline: none !important;
+}
+
+.py-7 
+{
+    padding: 91px 0;
+}
+
+.bg-special 
+{
+    background-image: url(/imgs/bg-1.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.nav-link 
+{
+    color: black !important;
+}
+
+.nav-link:hover 
+{
+    color: #ef6c00 !important;
+}
+
+h1 
+{
+    font-size: 50px;
+}
+
+h2 
+{
+    font-size: 42px;
+}
+
+h3 
+{
+    font-size: 26px;
+}
+
+h4 
+{
+    font-size: 22px;
+}
+
+h5 
+{
+    font-size: 18px;
+}
+
+.btn-action
+{
+    font-size: 20px;
+    transition: 400ms;
+    cursor: pointer;
+    padding: 4px;
+}
+
+
+/*** NAVBAR ***/
+
+
+nav .sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999 !important;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 29px;
+}
+
+nav .sidenav a 
+{
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+nav .navbar-toggler 
+{
+    border: 0;
+}
+
+nav .navbar-toggler:focus 
+{
+    outline: none
+}
+
+
+/*** FIRST-SECTION ***/
+
+
+.first-section .main-text:after 
+{
+    white-space: pre-wrap;
+    content: "We kindly remind you that your test assignment should be submitted as a link to github/bitbucket repository. Please be patient, we consider and respond to every application that meets minimum requirements. We look forward to your submission. \A Good luck!";
+}
+
+.first-section p 
+{
+    font-size: 20px;
+}
+
+.first-section .btn-signup 
+{
+    font-size: 18px;
+    background-color: #ef6c00;
+}
+
+
+/*** SECOND-SECTION ***/
+
+
+.second-section p 
+{
+    font-size: 16px;
+}
+
+.second-section a 
+{
+    font-size: 22px;
+    color: #ef6c00;
+}
+
+.second-section.py-7 
+{
+    padding-top: 132px;
+    padding-bottom: 9px;
+}
+
+
+/*** THIRD-SECTION ***/
+
+
+.third-section h4 
+{
+    font-size: 26px;
+}
+
+.third-section .mt-title
+{
+    margin-top: 4px;
+}
+
+.third-section.py-7 
+{
+    padding-bottom: 133px !important;
+}
+
+
+/*** FOUR-SECTION ***/
+
+
+.four-section 
+{
+    background-image: url(/imgs/bg-2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+.four-section.py-7 {
+    padding-top: 130px;
+    padding-bottom: 138px;
+}
+
+
+/*** FIVE-SECTION ***/
+
+
+.five-section h4 
+{
+    font-size: 22px;
+}
+
+.five-section span 
+{
+    font-size: 14px;
+}
+
+.five-section .btn-show 
+{
+    margin-top: 14px;
+}
+
+.five-section .btn-action 
+{
+    border: 2px solid #ef6c00;
+    color: #ef6c00 !important; 
+    transition: 400ms;
+}
+
+.five-section .btn-action:hover 
+{
+    text-decoration: none;
+    background-color: #ef6c00;
+    color: white !important;
+}
+
+.five-section .overflow:not(h4) 
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.five-section.py-7 
+{
+    padding-top: 133px;
+    padding-bottom: 59px;
+}
+
+
+/*** SIX-SECTION ***/
+
+
+.six-section .attention 
+{
+    margin-bottom: 62px;
+}
+
+.six-section .btn-show 
+{
+    margin-top: 61px;
+}
+
+.six-section .mx-special 
+{
+    margin: 0 6px;
+}
+
+.six-section .btn-action
+{
+    background-color: #D7D7D7;
+    color: #8D8C8C
+}
+
+.six-section .btn-action:hover 
+{
+    -webkit-filter: brightness(0.8);
+    -o-filter: brightness(0.8);
+    filter: brightness(0.8);
+}
+
+.six-section label:not(.input-group-append) 
+{
+    font-size: 12px;
+    user-select: none;
+}
+
+.six-section input::placeholder 
+{
+    color: #cccccc;
+    transition: 400ms;
+}
+
+.six-section input:focus::placeholder 
+{
+    color: black;
+}
+
+.six-section .form-group
+{
+    padding: 8px;
+    border: 1px solid #CCCCCC;
+    margin: 8px;
+}
+
+.six-section .form-group:not(select) 
+{
+    color: #CCCCCC;
+}
+
+.six-section .form-group>label:not(.input-group-append) 
+{
+    position: absolute;
+    top: -9px;
+    left: 12.5px;
+    padding: 0 2.5px;
+    background-color: white;
+}
+
+.six-section .form-group>input 
+{
+    border: none;
+}
+
+.six-section .form-group-spacing:not(:last-of-type)
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.six-section .form-control:focus
+{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.six-section input
+{
+    padding: 6px 7.5px;
+}
+
+.six-section select 
+{
+    background: none;
+    display: inline-block;
+    border: 1px solid #8d8c8c;
+    line-height: 1.5em;
+    padding: 15px !important;
+    
+    background-image: linear-gradient(45deg, transparent 50%, black 50%),
+                      linear-gradient(135deg, black 50%, transparent 50%);
+    background-position: calc(100% - 25px) calc(1.5em - 2px),
+                         calc(100% - 15px) calc(1.5em - 2px);
+    background-size: 10px 10px,
+                     10px 10px;
+    background-repeat: no-repeat;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.six-section select:focus 
+{
+    background-size: 0px;
+    outline: 0;
+}
+
+.six-section .btn-upload 
+{
+    border: 2px solid #ef6c00;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #ef6c00;
+    transition: 400ms;
+    cursor: pointer;
+    height: 100%;
+    font-size: 18px;
+}
+
+.six-section .btn-upload:hover 
+{
+    background-color: #ef6c00;
+    color: white;
+}
+
+.six-section .mt-info 
+{
+    margin-top: 67px !important;
+    color: #CCCCCC;
+}
+
+.six-section .mt-form 
+{
+    margin-top: 38px;
+}
+
+
+/*** FOOTER ***/
+
+
+footer 
+{
+    background-color: #283593;
+}
+
+footer .hr-footer 
+{
+    border-top: 1px solid #5f5fc4;
+}
+
+footer .footer-links div li 
+{
+    margin: 10px 0;
+}
+
+footer .footer-titles li span 
+{
+    color: white;
+    font-size: 20px !important;
+}
+
+footer .footer-socials 
+{
+    padding-bottom: 30px;
+}
+
+footer .footer-links div li a 
+{
+    color: white;
+    font-size: 15px;
+}
+
+footer .footer-links div li a:hover, .footer-links-high a:hover 
+{
+    text-decoration: none;
+    color: #ef6c00 !important;
+}
+
+
+/*** ADAPTIVITY ***/
+
+
+@media screen and (max-width: 991px) 
+{
+    .w-25
+    {
+        width: 50% !important;
+    }
+    
+    h1 
+    {
+        font-size: 42px;
+    }
+    
+    .second-section.py-7, .four-section.py-7, .five-section.py-7 
+    {
+        padding-top: 110px !important;
+    }
+    
+    .second-section.py-7 
+    {
+        padding-bottom: 35px;
+    }
+    
+    .third-section.py-7 
+    {
+        padding-bottom: 110px !important;
+    }
+    
+    .four-section.py-7 
+    {
+        padding-bottom: 103px;
+    }
+    
+    .five-section.py-7 
+    {
+        padding-bottom: 39px;
+    }
+    
+    .six-section.py-7 
+    {
+        padding-bottom: 71px;
+    }
+    
+    .third-section .mt-title
+    {
+        margin-top: 0;
+    }
+    
+    .third-section .mt-icon
+    {
+        margin-top: 6px;
+    }
+    
+    .third-section .my-center-block
+    {
+        margin: 42px 0;
+    }
+    
+    .six-section .attention 
+    {
+        margin-bottom: 52px;
+    }
+}
+
+@media screen and (max-width: 767px) 
+{
+    h1 
+    {
+        font-size: 30px;
+    }
+    
+    h2 
+    {
+        font-size: 26px;
+    }
+    
+    h3 
+    {
+        font-size: 22px;
+    }
+    
+    h5 
+    {
+        font-size: 16px;
+        font-family: Source Sans Pro;
+        font-weight: Regular;
+    }    
+
+    .w-25, .first-section .btn-signup
+    {
+        width: 100% !important;
+    }
+    
+    .second-section.py-7 
+    {
+        padding: 57px 0;
+    }
+    
+    .third-section.py-7 
+    {
+        padding-bottom: 72px !important;
+    }
+    
+    .four-section.py-7 
+    {
+        padding-top: 62px;
+        padding-bottom: 46px;
+    }
+    
+    .five-section.py-7 
+    {
+        padding-top: 62px !important;
+        padding-bottom: 69px !important;
+    }
+    
+    .six-section.py-7 
+    {
+        padding-bottom: 21px !important;
+    }
+    
+    .third-section .mt-title
+    {
+        margin-top: 4px;
+    }
+    
+    .third-section .mt-icon
+    {
+        margin-top: 0px;
+    }
+    
+    .five-section .btn-show 
+    {
+        margin-top: 33px;
+    }
+    
+    .five-section .user-block:nth-child(3),
+    .user-block:nth-child(4),
+    .user-block:nth-child(5) 
+    {
+        display: none !important;
+    }
+    
+    .six-section .form-group-spacing 
+    {
+        margin: 33px 8px !important;
+    }
+    
+    .six-section .mt-form 
+    {
+        margin-top: 0;
+    }
+    
+    .six-section .btn-upload:hover 
+    {
+        background-color: #ef6c00;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 320px) 
+{   
+    .first-section.h-100-min 
+    {
+        min-height: 60vh !important;
+    }
+    
+    .first-section .main-text 
+    {
+        line-height: normal;
+    }
+    
+    .first-section .main-text:after 
+    {
+        content: "We kindly remind you that your test assignment should be submitted as a link to github/bitbucket repository.";
+        font-size: 16px;
+    }
+    
+    .third-section, .six-section 
+    {
+        padding-top: 0 !important;
+    }
+}
