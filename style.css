@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass:600|Source+Sans+Pro:400,700');
 
+:root
+{
+    --brand-color-orange: #ef6c00;
+}
 
-/*** DEFAULT ***/
 
 
+/***** DEFAULT *****/
 * 
 {
     font-family: Source Sans Pro;
@@ -59,7 +63,7 @@ h1, h2, h3, h4, h5
 
 .nav-link:hover 
 {
-    color: #ef6c00 !important;
+    color: var(--brand-color-orange) !important;
 }
 
 h1 
@@ -96,9 +100,8 @@ h5
 }
 
 
-/*** NAVBAR ***/
 
-
+/***** NAVBAR *****/
 nav .sidenav 
 {
     height: 100%;
@@ -134,9 +137,8 @@ nav .navbar-toggler:focus
 }
 
 
-/*** FIRST-SECTION ***/
 
-
+/***** FIRST-SECTION *****/
 .first-section .main-text:after 
 {
     white-space: pre-wrap;
@@ -151,13 +153,12 @@ nav .navbar-toggler:focus
 .first-section .btn-signup 
 {
     font-size: 18px;
-    background-color: #ef6c00;
+    background-color: var(--brand-color-orange);
 }
 
 
-/*** SECOND-SECTION ***/
 
-
+/***** SECOND-SECTION *****/
 .second-section p 
 {
     font-size: 16px;
@@ -166,7 +167,7 @@ nav .navbar-toggler:focus
 .second-section a 
 {
     font-size: 22px;
-    color: #ef6c00;
+    color: var(--brand-color-orange);
 }
 
 .second-section.py-7 
@@ -176,9 +177,8 @@ nav .navbar-toggler:focus
 }
 
 
-/*** THIRD-SECTION ***/
 
-
+/***** THIRD-SECTION *****/
 .third-section h4 
 {
     font-size: 26px;
@@ -195,9 +195,8 @@ nav .navbar-toggler:focus
 }
 
 
-/*** FOUR-SECTION ***/
 
-
+/***** FOUR-SECTION *****/
 .four-section 
 {
     background-image: url(imgs/bg-2.jpg);
@@ -206,15 +205,15 @@ nav .navbar-toggler:focus
     color: white;
 }
 
-.four-section.py-7 {
+.four-section.py-7 
+{
     padding-top: 130px;
     padding-bottom: 138px;
 }
 
 
-/*** FIVE-SECTION ***/
 
-
+/***** FIVE-SECTION *****/
 .five-section h4 
 {
     font-size: 22px;
@@ -232,15 +231,15 @@ nav .navbar-toggler:focus
 
 .five-section .btn-action 
 {
-    border: 2px solid #ef6c00;
-    color: #ef6c00 !important; 
+    border: 2px solid var(--brand-color-orange);
+    color: var(--brand-color-orange) !important; 
     transition: 400ms;
 }
 
 .five-section .btn-action:hover 
 {
     text-decoration: none;
-    background-color: #ef6c00;
+    background-color: var(--brand-color-orange);
     color: white !important;
 }
 
@@ -257,9 +256,8 @@ nav .navbar-toggler:focus
 }
 
 
-/*** SIX-SECTION ***/
 
-
+/***** SIX-SECTION *****/
 .six-section .attention 
 {
     margin-bottom: 62px;
@@ -278,7 +276,7 @@ nav .navbar-toggler:focus
 .six-section .btn-action
 {
     background-color: #D7D7D7;
-    color: #8D8C8C
+    color: #8D8C8C;
 }
 
 .six-section .btn-action:hover 
@@ -376,10 +374,10 @@ nav .navbar-toggler:focus
 
 .six-section .btn-upload 
 {
-    border: 2px solid #ef6c00;
+    border: 2px solid var(--brand-color-orange);
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
-    color: #ef6c00;
+    color: var(--brand-color-orange);
     transition: 400ms;
     cursor: pointer;
     height: 100%;
@@ -388,7 +386,7 @@ nav .navbar-toggler:focus
 
 .six-section .btn-upload:hover 
 {
-    background-color: #ef6c00;
+    background-color: var(--brand-color-orange);
     color: white;
 }
 
@@ -404,9 +402,8 @@ nav .navbar-toggler:focus
 }
 
 
+
 /*** FOOTER ***/
-
-
 footer 
 {
     background-color: #283593;
@@ -442,13 +439,12 @@ footer .footer-links div li a
 footer .footer-links div li a:hover, .footer-links-high a:hover 
 {
     text-decoration: none;
-    color: #ef6c00 !important;
+    color: var(--brand-color-orange) !important;
 }
 
 
-/*** ADAPTIVITY ***/
 
-
+/***** ADAPTIVITY *****/
 @media screen and (max-width: 991px) 
 {
     .w-25
