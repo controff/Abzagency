@@ -11,7 +11,7 @@
     <nav class="navbar fixed-top px-lg-0 navbar-expand-lg navbar-light bg-light">
         <div id='nav' v-for='user in nav' class='container p-lg-0'>
             <span class="navbar-brand d-flex flex-fill">
-                <img src="logo/logo.svg" width="134" height="24" alt="">
+                <img src="logo/logo.png" width="134" height="24" alt="">
             </span>
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav justify-content-start d-flex flex-fill">
@@ -180,7 +180,7 @@
                     </div>
                 </div>
                 <div class="text-center mx-lg-0 mx-4 btn-show">
-                    <a v-on:click="next_url" class='btn btn-action btn-showmore w-25 font-weight-bold rounded'>Show more</a>
+                    <a v-on:click="next_url" v-show="visible" class='btn btn-action btn-showmore w-25 font-weight-bold rounded'>Show more</a>
                 </div>
             </div>
         </div>
@@ -250,7 +250,7 @@
             <div class="container px-0 align-self-center">
                 <div class="row w-100 mx-auto">
                     <div class='col-md-3 px-0 text-md-left text-center'>
-                        <img src="logo/logo-white.svg" width="134px" height="24px" alt="">
+                        <img src="logo/logo-white.png" width="134px" height="24px" alt="">
                     </div>
                     <div class="col-md-9 px-0 text-md-right text-center footer-links-high">
                         <a class='mx-md-3 mt-3 d-md-inline d-block text-light' href="#About-me">About me</a>
@@ -268,15 +268,15 @@
                     <ul class="list-unstyled footer-titles">
                       <li class='d-flex align-items-center'>
                           <img class='d-lg-flex d-none' src="icons/mail.svg" width="24px" height="18px" alt="">
-                          <span class='ml-2'>work.of.future@gmail.com</span>
+                          <span class='ml-2'>example@gmail.com</span>
                       </li>
                       <li class='my-3 justify-content-md-start justify-content-center d-flex align-items-center'>
                           <img class='d-lg-flex d-none' src="icons/phone.svg" width="20px" height="20px" alt="">
-                          <span class='ml-2'>+38 (050) 789 24 98</span>
+                          <span class='ml-2'>+38 (050) 999 99 99</span>
                       </li>
                       <li class='d-flex justify-content-md-start justify-content-center align-items-center'>
                           <img class='d-lg-flex d-none' src="icons/cellphone.svg" width="19px" height="26px" alt="">
-                          <span class='ml-2'>+38 (095) 556 08 45</span>
+                          <span class='ml-2'>+38 (095) 999 99 99</span>
                       </li>
                     </ul>
                 </div>

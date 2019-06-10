@@ -59,7 +59,8 @@ $(document).ready(function() {
     let print_users = new Vue({ //Получение юзеров в блок "Our cheerful users"
         el: '#task-2',
         data: {
-            users: []
+            users: [],
+            visible: true
         },
         created() {
             axios
@@ -85,7 +86,7 @@ $(document).ready(function() {
             next_url: function() { //Получение дополнительных 6 юзеров в блоке "Our cheerful users"
                 var last_element = print_users.users[print_users.users.length - 1];
                 if(last_element.link == null) { //Скрытие кнопки "Show more", если пользователей в БД нет
-                    $('.btn-showmore').hide();
+                    this.visible = false;
                 };
                 axios
                     .get(last_element.link)
@@ -105,7 +106,7 @@ $(document).ready(function() {
                             return b.registration_timestamp - a.registration_timestamp
                         });
                         if(response.data.users.length < 6) { //Скрытие кнопки "Show more", если пользователей в БД нет (№2 для предотвращения багов)
-                            $('.btn-showmore').hide();
+                            this.visible = false;
                         }
                     })
             }
@@ -149,7 +150,7 @@ $(document).ready(function() {
                 formData.append('phone', $('#phone').val());
                 formData.append('photo', fileField.files[0]);
                 
-                axios.post("https://frontend-test-assignment-api.abz.agency/api/v1/users", formData, 
+                axios.post("", formData, 
                 {
                     headers: 
                     {
